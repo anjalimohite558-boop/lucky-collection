@@ -17,7 +17,7 @@ const AdminMessages = () => {
   const fetchMessages = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("http://localhost:5000/api/contact");
+      const res = await axios.get("https://lucky-collection.onrender.com/api/contact");
       setMessages(res.data);
     } catch (error) {
       console.log("Error fetching messages:", error);
@@ -36,7 +36,7 @@ const AdminMessages = () => {
 
       if (!confirmDelete) return;
 
-      await axios.delete(`http://localhost:5000/api/contact/${id}`);
+      await axios.delete(`https://lucky-collection.onrender.com/api/contact/${id}`);
       alert("Message Deleted Successfully!");
       fetchMessages();
     } catch (error) {
@@ -76,7 +76,7 @@ const AdminMessages = () => {
       };
 
       const res = await axios.post(
-        "http://localhost:5000/api/contact/reply",
+        "https://lucky-collection.onrender.com/api/contact/reply",
         replyData
       );
 

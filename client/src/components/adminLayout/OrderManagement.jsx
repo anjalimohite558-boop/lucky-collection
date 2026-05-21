@@ -20,7 +20,7 @@ const OrderManagement = () => {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/orders/all",
+        "https://lucky-collection.onrender.com/api/orders/all",
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -42,7 +42,7 @@ const OrderManagement = () => {
       const token = localStorage.getItem("token");
 
       const res = await axios.put(
-        `http://localhost:5000/api/orders/status/${orderId}`,
+        `https://lucky-collection.onrender.com/api/orders/status/${orderId}`,
         { status },
         {
           headers: {
@@ -306,7 +306,7 @@ const OrderManagement = () => {
 
                       <td>
                         <img
-                          src={`http://localhost:5000/uploads/${item.itemImage}`}
+                          src={`https://lucky-collection.onrender.com/uploads/${item.itemImage}`}
                           alt="item"
                           width="70"
                           height="70"

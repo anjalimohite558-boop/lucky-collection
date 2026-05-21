@@ -40,7 +40,7 @@ const RecommendedProducts = () => {
               <Card style={{ background: "#1b1b1b", border: "1px solid #333" }}>
                 <Card.Img
                   variant="top"
-                  src={`http://localhost:5000/uploads/${item.itemImage}`}
+                  src={`https://lucky-collection.onrender.com/uploads/${item.itemImage}`}
                   style={{ height: "200px", objectFit: "cover" }}
                 />
                 <Card.Body>

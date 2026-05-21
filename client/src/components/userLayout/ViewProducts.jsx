@@ -33,7 +33,7 @@ const ViewProducts = () => {
 
   const fetchItems = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/items");
+      const res = await axios.get("https://lucky-collection.onrender.com/api/items");
       setItems(res.data.items || []);
       setFilteredItems(res.data.items || []);
     } catch (error) {
@@ -47,7 +47,7 @@ const ViewProducts = () => {
   const semanticSearch = async () => {
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/items/semantic-search?q=${search}`
+        `https://lucky-collection.onrender.com/api/items/semantic-search?q=${search}`
       );
 
       let resultItems = res.data.items || [];
@@ -219,7 +219,7 @@ const ViewProducts = () => {
                   {/* IMAGE FIXED */}
                   <Card.Img
                     variant="top"
-                    src={`http://localhost:5000/uploads/${item.itemImage}`}
+                    src={`https://lucky-collection.onrender.com/uploads/${item.itemImage}`}
                     style={{
                       width: "100%",
                       height: "280px",

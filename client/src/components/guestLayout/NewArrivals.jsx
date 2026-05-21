@@ -25,7 +25,7 @@ const NewArrivals = () => {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/items"
+        "https://lucky-collection.onrender.com/api/items"
       );
 
       const data = Array.isArray(res.data)
@@ -109,7 +109,7 @@ const NewArrivals = () => {
 
                     <Card.Img
                       variant="top"
-                      src={`http://localhost:5000/uploads/${item.itemImage}`}
+                      src={`https://lucky-collection.onrender.com/uploads/${item.itemImage}`}
                       style={{
                         width: "100%",
                         height: "100%",

@@ -40,7 +40,7 @@ const Login = () => {
       };
 
       const res = await axios.post(
-        "http://localhost:5000/api/users/login",
+        "https://lucky-collection.onrender.com/api/users/login",
         payload
       );
 

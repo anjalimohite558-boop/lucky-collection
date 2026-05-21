@@ -48,7 +48,7 @@ const ChangePassword = () => {
       }
 
       const res = await axios.put(
-        "http://localhost:5000/api/users/change-password",
+        "https://lucky-collection.onrender.com/api/users/change-password",
         {
           oldPassword: form.oldPassword,
           newPassword: form.newPassword,

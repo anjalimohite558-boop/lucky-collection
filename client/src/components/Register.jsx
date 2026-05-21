@@ -64,7 +64,7 @@ const Register = () => {
       };
 
       const res = await axios.post(
-        "http://localhost:5000/api/users/register",
+        "https://lucky-collection.onrender.com/api/users/register",
         payload
       );
 

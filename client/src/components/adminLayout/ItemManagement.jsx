@@ -36,7 +36,7 @@ const ItemManagement = () => {
   // ================= FETCH PRODUCTS =================
   const fetchItems = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/items");
+      const res = await axios.get("https://lucky-collection.onrender.com/api/items");
 
       setItems(res.data.items || []);
     } catch (error) {
@@ -91,7 +91,7 @@ const ItemManagement = () => {
 
       if (isEditMode) {
         res = await axios.put(
-          `http://localhost:5000/api/items/${itemId}`,
+          `https://lucky-collection.onrender.com/api/items/${itemId}`,
           formData,
           {
             headers: {
@@ -102,7 +102,7 @@ const ItemManagement = () => {
         );
       } else {
         res = await axios.post(
-          "http://localhost:5000/api/items/create",
+          "https://lucky-collection.onrender.com/api/items/create",
           formData,
           {
             headers: {
@@ -147,7 +147,7 @@ const ItemManagement = () => {
     });
 
     setPreviewImage(
-      `http://localhost:5000/uploads/${item.itemImage}`
+      `https://lucky-collection.onrender.com/uploads/${item.itemImage}`
     );
 
     setItemId(item._id);
@@ -167,7 +167,7 @@ const ItemManagement = () => {
       const token = localStorage.getItem("token");
 
       const res = await axios.delete(
-        `http://localhost:5000/api/items/${id}`,
+        `https://lucky-collection.onrender.com/api/items/${id}`,
         {
           headers: {
             Authorization: `Bearer ${token}`,
@@ -559,7 +559,7 @@ const ItemManagement = () => {
 
                     <td>
                       <img
-                        src={`http://localhost:5000/uploads/${item.itemImage}`}
+                        src={`https://lucky-collection.onrender.com/uploads/${item.itemImage}`}
                         alt="product"
                         width="85"
                         height="85"

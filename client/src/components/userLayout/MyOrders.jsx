@@ -14,7 +14,7 @@ const MyOrders = () => {
       const token = localStorage.getItem("token");
 
       const res = await axios.get(
-        "http://localhost:5000/api/orders/myorders",
+        "https://lucky-collection.onrender.com/api/orders/myorders",
         {
           headers: {
             Authorization: `Bearer ${token}`,

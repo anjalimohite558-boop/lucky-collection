@@ -20,7 +20,7 @@ const SemanticSearchPage = () => {
       setLoading(true);
 
       const res = await axios.get(
-        `http://localhost:5000/api/items/semantic-search?q=${encodeURIComponent(
+        `https://lucky-collection.onrender.com/api/items/semantic-search?q=${encodeURIComponent(
           searchText
         )}`
       );
@@ -96,7 +96,7 @@ const SemanticSearchPage = () => {
                 {/* Image */}
                 <Card.Img
                   variant="top"
-                  src={`http://localhost:5000/uploads/${item.itemImage}`}
+                  src={`https://lucky-collection.onrender.com/uploads/${item.itemImage}`}
                   style={{
                     height: "240px",
                     objectFit: "cover",

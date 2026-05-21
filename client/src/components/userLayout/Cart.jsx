@@ -37,7 +37,7 @@ const Cart = () => {
       }));
 
       const res = await axios.post(
-        "http://localhost:5000/api/orders/create",
+        "https://lucky-collection.onrender.com/api/orders/create",
         {
           items: orderItems,
           totalAmount,
@@ -110,7 +110,7 @@ const Cart = () => {
                   <tr key={item._id}>
                     <td>
                       <img
-                        src={`http://localhost:5000/uploads/${item.itemImage}`}
+                        src={`https://lucky-collection.onrender.com/uploads/${item.itemImage}`}
                         alt="item"
                         width="70"
                         height="70"
