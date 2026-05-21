@@ -1,0 +1,308 @@
+/* =========================
+   GLOBAL LUXURY DARK THEME
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f0f;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+  background: linear-gradient(
+    135deg,
+    #111111,
+    #1a1a1a,
+    #0f0f0f
+  );
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 20px;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  text-decoration: none !important;
+  color: #d4af37 !important;
+}
+
+a:hover {
+  color: #f5d76e !important;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  background: rgba(15, 15, 15, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #2d2d2d;
+}
+
+.navbar-brand,
+.nav-link {
+  color: white !important;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #d4af37 !important;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+  background: #1a1a1a !important;
+  border: 1px solid #2d2d2d !important;
+  color: white !important;
+  border-radius: 18px !important;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* =========================
+   INPUTS
+========================= */
+
+.form-control,
+.form-select {
+  background: #111 !important;
+  color: white !important;
+  border: 1px solid #444 !important;
+  border-radius: 10px !important;
+}
+
+.form-control:focus,
+.form-select:focus {
+  background: #111 !important;
+  color: white !important;
+  border-color: #d4af37 !important;
+  box-shadow: 0 0 10px rgba(212, 175, 55, 0.3) !important;
+}
+
+.form-control::placeholder {
+  color: #999 !important;
+}
+
+/* IMPORTANT FIX FOR SELECT OPTIONS */
+
+select option {
+  background-color: #111 !important;
+  color: white !important;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+.table {
+  color: white !important;
+  border-color: #2d2d2d !important;
+}
+
+/* HEADER */
+
+.table thead th {
+  background: linear-gradient(
+    45deg,
+    #d4af37,
+    #f5d76e
+  ) !important;
+
+  color: black !important;
+
+  border-color: #2d2d2d !important;
+
+  text-align: center;
+}
+
+/* BODY */
+
+.table tbody tr td {
+  background: #161616 !important;
+  color: white !important;
+  border-color: #2d2d2d !important;
+  vertical-align: middle;
+}
+
+/* HOVER */
+
+.table-hover tbody tr:hover td {
+  background: #202020 !important;
+  color: white !important;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn-primary {
+  background: linear-gradient(
+    45deg,
+    #d4af37,
+    #f5d76e
+  ) !important;
+
+  border: none !important;
+  color: black !important;
+  font-weight: 700 !important;
+}
+
+.btn-primary:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.btn-warning {
+  background: #d4af37 !important;
+  border: none !important;
+  color: black !important;
+}
+
+.btn-danger {
+  background: #8b0000 !important;
+  border: none !important;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #d4af37;
+  font-weight: 700;
+}
+
+/* =========================
+   TEXT
+========================= */
+
+.text-muted {
+  color: #aaaaaa !important;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background: #111;
+  border-top: 1px solid #2d2d2d;
+  color: #ccc;
+}
+
+/* =========================
+   IMAGES
+========================= */
+
+img {
+  transition: 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.02);
+}
+
+/* =========================
+   AI TAG
+========================= */
+
+.ai-tag {
+  background: linear-gradient(
+    45deg,
+    #d4af37,
+    #f5d76e
+  );
+
+  color: black;
+
+  padding: 5px 10px;
+
+  border-radius: 8px;
+
+  font-size: 12px;
+
+  font-weight: 600;
+}
+
+/* =========================
+   CONTAINERS
+========================= */
+
+.container,
+.container-fluid {
+  position: relative;
+  z-index: 1;
+}
+
+
+/* =========================
+   PRODUCT FILTER SECTION
+========================= */
+
+.filter-box {
+  background: #1a1a1a;
+  border: 1px solid #2d2d2d;
+  padding: 20px;
+  border-radius: 18px;
+}
+
+/* =========================
+   PRODUCT CARD HOVER
+========================= */
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+  border-color: #d4af37 !important;
+}
+
+/* =========================
+   BADGES
+========================= */
+
+.badge {
+  font-size: 12px;
+  padding: 8px 10px;
+}
+
+/* =========================
+   RECOMMENDED SECTION
+========================= */
+
+.recommended-title {
+  color: #d4af37;
+  font-weight: 800;
+}
